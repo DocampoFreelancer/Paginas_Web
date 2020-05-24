@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!-- Esta página contiene como hacer una tabla -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Una tabla de HTML5 simple</title>
+    </head>
+
+
+    <body>
+        <!-- <table> crea una tabla, y su argumento "border" da borde alrededor de la tabla y-->
+        <!-- entre las celdas, el número de border da el ancho del borde-->
+        <table border="1">
+            <!-- <caption> da el título de la tabla y lo coloca siempre al principio de la misma -->
+            <caption><strong>Título de la tabla</strong></caption>
+            <!-- <thead> es el encabezado de la tabla, o sea, el nombre de las columnas iniciales -->
+            <thead>
+                <!-- <tr> inserta una fila en la tabla -->
+                <tr>
+                    <th>Fruta</th> <!-- Inserta una celda de encabezado, o sea, crea columnas -->
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <!-- <tfoot>> crea el Pie de tabla -->
+            <tfoot>
+                <tr><!-- <tr> crea una fila -->
+                    <th>Total</th> <!-- <th> crea una celda -->
+                    <th>$3.75</th>
+                </tr>
+            </tfoot>
+            <!-- <tbody> crea el cuerpo de la tabla -->
+            <tbody>
+                <tr> <!-- <tr> crea filas -->
+                    <td>Manzana</td> <!--Crea celdas en la parte del cuerpo de la tabla -->
+                    <td>$0.25</td>
+                </tr>
+
+                <tr>
+                    <td>Naranja</td>
+                    <td>$0.50</td>
+                </tr>
+
+                <tr>
+                    <td>Pl&acute;tano</td>
+                    <td>$1.00</td>
+                </tr>
+
+                <tr>
+                    <td>Pi&ntilde;a</td>
+                    <td>$2.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
