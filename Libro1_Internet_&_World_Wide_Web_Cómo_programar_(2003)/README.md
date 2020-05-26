@@ -1,8 +1,8 @@
 # Internet & World Wide Web cómo programar
 **Autor:** Deitel y asociados  
-**Año:** 2003 
+**Año:** 2003  
 **Edición:** Quinta  
-**ISBN 10:** 6073222904 
+**ISBN 10:** 6073222904  
 **URL del autor:** https://deitel.com/
 
 ### Nota:
