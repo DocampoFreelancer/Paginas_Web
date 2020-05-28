@@ -1,0 +1,92 @@
+<!--
+    Autor: Rolando Docampo Fernández
+    Lugar: Casa de Marcia
+    Descripción: Una universidad local le pidió que creara un documento HTML5 que permita a los futuros estudiantes universitarios proveer retroalimentación sobre su visita al campus. Su documento de HTML5 debe contener un formulario con campos de texto para un nombre y un correo electrónico. Proporcione casillas de verificación que permitan a los futuros estudiantes indicar lo que les gustó más sobre el campus. Las casillas de verificación deben incluir: campus, estudiantes, ubicación, ambiente, dormitorios y deportes. Proporcione además botones de opción que pregunten a los futuros estudiantes cómo supieron sobre la universidad. Las opciones pueden incluir: amigos, televisión, Internet y otro. Además, proporcione una área de texto para comentarios adicionales, un botón para enviar y un botón para reestablecer. Use post para enviar la información en el formulario a http://www.deitel.com.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 2.16</title>
+    </head>
+
+    <body>
+        <h1>Formulario de encuesta sobre el campus</h1>
+        <hr>
+        <p><h3>Datos personales:</h3></p>
+        <form action="http://www.deitel.com" method="POST">
+            <p><label>Nombre:
+                <input type="text" name="nombre" size="25" maxlength="30">
+            </label>
+
+            <label>Apellidos:
+                <input type="text" name="apellidos" size="40" maxlength="40">
+            </label>
+            </p>
+
+            <p>
+                <label>Email:
+                    <input type="password" name="correo electrónico" size="25">
+                </label>
+            </p>
+
+            <strong>Indique lo que m&aacute;s le gust&oacute; del campus:</strong> <br>
+            <label>campus
+                <input type="checkbox" name="campus" value="campus">
+            </label>
+
+            <label>estudiantes
+                <input type="checkbox" name="estudiantes" id="">
+            </label>
+
+            <label>ubicaci&oacute;n
+                <input type="checkbox" name="ubicacion" value="ubicacion">
+            </label>
+
+            <label>ambiente
+                <input type="checkbox" name="ambiente" value="ambiente">
+            </label>
+
+            <label>dormitorios
+                <input type="checkbox" name="dormitorios" value="dormitorios">
+            </label>
+
+            <label>deportes
+                <input type="checkbox" name="deportes" value="deportes">
+            </label>
+
+            <p>
+                <strong>C&oacute;mo supieron de la universidad:</strong>
+
+                <label>amigos
+                    <input type="radio" name="know" value="amigos">
+                </label>
+
+                <label>televisi&oacute;n
+                    <input type="radio" name="know" value="television">
+                </label>
+
+                <label>Internet
+                    <input type="radio" name="know" value="Internet">
+                </label>
+
+                <label>otro
+                    <input type="radio" name="know" value="otro">
+                </label>
+            </p>
+
+            <p>
+                <label>Comentarios: <br>
+                    <textarea name="comentarios" cols="30" rows="10">Hola</textarea>
+                </label>
+            </p>
+
+            <p>
+                <input type="submit" name="Enviar" value="Enviar">
+                <input type="reset" name="Borrar" value="Borrar">
+            </p>
+        </form>    
+    </body>
+</html>
