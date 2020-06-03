@@ -1,0 +1,39 @@
+<!--
+    Autor: Rolando Docampo Fernández
+    Lugar: Casa de Marcia
+    Descripción: (Formulario de registro Web con encuesta opcional). Cree un formulario de registro web para obtener el primer nombre, apellido y dirección de correo electrónico de un usuario. Incluya además una pregunta de encuesta opcional que pida el año en el que se encuentra el usuario en la universidad (por ejemplo, primer año). Coloque la pregunta de encuesta opcional en el elemento details que el usuario puede expandir par ver la pregunta.
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 3.6</title>
+    </head>
+
+    <body>
+        <h3>Formulario de registro Web</h3>
+        
+        <form action="www.universidad.com" method="POST">
+            <p>
+                <input type="text" name="nombre" required placeholder="Nombre*">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="apellido" required placeholder="Apellidos*">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" required placeholder="email*">
+            </p>
+            <p>
+                <details>
+                    <summary>En qu&eacute; a&ntilde;o est&aacute;? (opcional)</summary>
+                    <p><input type="text" name="year" placeholder="a&ntilde;o" size="5"></p>
+                </details>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+        
+        Nota: Todos los campos con (*) son obligados llenarlos.
+    </body>
+</html>
