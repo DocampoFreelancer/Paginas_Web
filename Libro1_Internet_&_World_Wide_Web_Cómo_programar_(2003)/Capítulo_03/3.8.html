@@ -1,0 +1,31 @@
+<!--
+    Autor: Rolando Docampo Fernández
+    Lugar: Casa de Marcia
+    Descripción: (Creación de un formulario autocomplete con un elemento datalist). Cree un elemento input autocomlete con un elemento datalist asociado que contenga los días de la semana.
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 3.8</title>
+    </head>
+
+    <body>
+        <h3>Autocomlete con datalist</h3> 
+        
+        <form action="www.deitel.com" method="POST">
+            <input type="text" list="dias" autocomplete placeholder="Dias de la semana">
+
+            <datalist id="dias">
+                <option>Lunes</option>
+                <option>Martes</option>
+                <option>Mi&eacute;rcoles</option>
+                <option>Jueves</option>
+                <option>Viernes</option>
+                <option>S&aacute;bado</option>
+                <option>Domingo</option>
+            </datalist>
+        </form>
+    </body>
+</html>
