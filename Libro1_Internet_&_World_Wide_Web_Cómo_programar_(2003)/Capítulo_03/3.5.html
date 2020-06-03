@@ -1,0 +1,92 @@
+<!--
+    Autor: Rolando Docampo Fernández
+    Lugar: Casa de Marcia
+    Descripción: Escriba un elemento (o elementos) de HTML5 para realizar cada una de las siguientes tareas:
+    a) Se pidió a los estudiantes que clasificaran los alimentos en la cafetería, en una escala del 1 al 10. Use un elemento meter con texto a su izquierda y a su derecha para indicar la calificacion promedio fue 7 de 10.
+    b) Cree un elemento details que muestre el texto "Resultados de la encuesta" en el elemento summary para la parte (a). Cuando el usuario haga clic en la flecha enseguida del texto de summary, deberá aparecer un párrafo que explique sobre la encuesta.
+    c) Cree un elemento input text para el primer nombre. El elemento deberá recibir el enfoque de manera automática al momento de desplegar el formulario en un navegador.
+    d) Modifique la parte (c) de modo que se elimine el elemento label y use texto en un elemento placeholder en el elemento input. 
+    e) Use un elemento datalist para proveer una lista autocomplete para cinco estados.
+    f) Cree un elemento input range que permita al usuario seleccionar un número del 1 al 100.
+    g) Especifique que no debe permitirse el atributo autocomplete en un formulario. Muestre sólo la etiqueta de apertura del formulario.
+    h) Use un elemento mark para resaltar el segundo enunciado del siguiente párrafo:
+        <p>Se pidi&oacute; a los estudiantes que calificaran los alimentos en la cafeter&iacute;a 
+            En una escala del 1 al 10. El resultado promedio fue 7. </p>
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 3.5</title>
+    </head>
+
+    <body>
+        <!--Inciso a)-->
+        <h3>Resultados de la encuesta</h3>
+        1 <meter 
+            min="0"
+            max="10"
+            value="7"
+        ></meter> 10
+
+        <!--Inciso b)-->
+        <details>
+            <summary>&quot;Resultados de la encuesta&quot;</summary>
+                La encuesta consiste en la clasificación de los alimentos en la cafetería de una escala del 1 al 10 donde 1 es malo y 10 es bueno.
+            <ul>
+                <li>Los resultados de la encuesta dan como regular los alimentos debido a que tuvo un valor promedio de 7.</li>
+            </ul>
+                
+        </details>
+
+        <!--Inciso c)-->
+        <p>
+            <form action="www.deitel.com" method="POST">
+                <label>Nombre:
+                    <input type="text" name="nombre" autofocus>
+                </label>
+            </form>
+        </p>
+
+        <!--Inciso d)-->
+        <p>
+            <form action="www.deitel.com" method="POST">
+                    <input type="text" name="nombre" autofocus placeholder="Nombre">
+            </form>
+        </p>
+
+        <!--Inciso e)-->
+        <p>
+            <form action="www.deitel.com" method="POST">
+                    <input type="text" name="estados" list="estados" placeholder="estados">
+
+                    <datalist id="estados">
+                        <option>Estado1</option>
+                        <option>Estado2</option>
+                        <option>Estado3</option>
+                        <option>Estado4</option>
+                        <option>Estado5</option>
+                    </datalist>
+            </form>
+        </p>
+
+        <!--Inciso f)-->
+        <p>
+            <form action="www.deitel.com" method="POST">
+                    1 <input type="range" min="1" max="100" step="1" value="1"> 100
+            </form>
+        </p>
+
+        <!--Inciso g)-->
+        <p>
+            <form action="www.deitel.com" method="POST" autocomplete="off"></form>
+        </p>
+
+        <!--Inciso h)-->
+        <p>
+            Se pidi&oacute; a los estudiantes que calificaran los alimentos en la cafeter&iacute;a 
+            <mark>En una escala del 1 al 10. El resultado promedio fue 7.</mark>
+        </p>
+    </body>
+</html>
