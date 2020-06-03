@@ -1,0 +1,26 @@
+<!--
+    Autor: Rolando Docampo Fernández
+    Lugar: Casa de Marcia
+    Descripción: (Creación de un formulario con autocomplete). Cree un formulario de búsqueda simple; use un elemento input search en donde el usuario pueda introducir una consulta de búsqueda. Use el navegador Web Firefox para probar el formulario. Escriba Junio y envíe el formlario. Después escriba una J en el elemento input para ver las entradas anteriores que empiezan con J; deberá aparecer Junio debajo del elemento input. Escriba Julio y envíe el formulario de nuevo. Ahora escriba J en el elemento input para ver las entradas anteriores que empiezan con J; deberán aparecer Junio y Julio debajo del elemento input. Pruebe esto con sus propias consultas de búsqueda también.
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 3.7</title>
+    </head>
+
+    <body>
+        <h3>Formulario autocomplete</h3>
+
+        <form action="www.deitel.com" method="POST" autocomplete="on">
+            <label>Búsqueda:
+                <input type="search" name="busqueda" size="10">
+            </label>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </form>
+    </body>
+</html>
