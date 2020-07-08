@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario complejo</title>
+    </head>
+
+    <body>
+        <h1>Formulario de retroalimentaci&oacute;n</h1>
+        <p>
+            Llene este formulario para ayudarnos a mejorar nuestro sitio:
+        </p>
+
+        <form action="http://www.deitel.com" method="post">
+            <input type="hidden" name="destinatario" value="deitel@deitel.com">
+            <input type="hidden" name="asunto" value="Formulario de retroalimentaci&oacute;n">
+            <input type="hidden" name="redirigir" value="principal.html">
+
+            <p>
+                <label>Nombre:
+                    <input type="text" name="nombre" size="25">
+                </label>
+            </p>
+
+            <p>
+                <label>Comentarios: <br>
+                    <textarea name="comentarios" cols="30" rows="10"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <label>Direcci&oacute;n de correo electr&oacute;nico:
+                    <input type="password" name="email" size="25">
+                </label>
+            </p>
+
+            <p>
+                <strong>Cosas que le gustaron:</strong><br>
+
+                <label>Dise&ntilde;o del sitio
+                    <input type="checkbox" name="cosas_gustaron" value="dise&ntilde;o">
+                </label>
+
+                <label>V&iacute;nculos
+                    <input type="checkbox" name="cosas_gustaron" value="v&iacute;nculos">
+                </label>
+
+                <label>Facilidad de uso
+                    <input type="checkbox" name="cosas_gustaron" value="facilidad">
+                </label>
+
+                <label>Im&aacute;genes
+                    <input type="checkbox" name="cosas_gustaron" value="im&aacute;genes">
+                </label>
+
+                <label>C&oacute;digo fuente
+                    <input type="checkbox" name="cosas_gustaron" value="c&oacute;digo">
+                </label>
+            </p>
+
+            <p>
+                <strong>C&oacute;mo lleg&oacute; a nuestro sitio:</strong><br>
+
+                <label>Motor de b&uacute;squeda
+                    <input type="radio" name="comositio" value="motor b&uacute;squeda" checked>
+                </label>
+
+                <label>V&iacute;nculos desde otros sitios
+                    <input type="radio" name="comositio" value="v&iacute;nculos">
+                </label>
+
+                <label>Sitio web deitel
+                    <input type="radio" name="comositio" value="deitel.com ">
+                </label>
+
+                <label>Referencia de un libro
+                    <input type="radio" name="comositio" value="libro">
+                </label>
+
+                <label>Otro
+                    <input type="radio" name="comositio" value="otro">
+                </label>
+            </p>
+
+            <p>
+                <label>Clasifique nuestro sitio
+                    <select name="clasificaci&oacute;n">
+                        <option>Sorprendente</option>
+                        <option>10</option>
+                        <option>9</option>
+                        <option>8</option>
+                        <option>7</option>
+                        <option selected>6</option>
+                        <option>5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                        <option>Malo</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabla simple</title>
+    </head>
+
+    <body>
+        <!--Los atributos border y summary estan obsoletos. Border es tradado en CSS y summary en un elemento caption dentro de table-->
+        <table border="1" summary="Nombre de frutas en la columna 1 y sus precios en la columna 2">
+            <thead>
+                <tr>
+                    <th>Fruta</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Manzana</td>
+                    <td>$0.25</td>
+                </tr>
+                <tr>
+                    <td>Naranja</td>
+                    <td>$0.50</td>
+                </tr>
+                <tr>
+                    <td>Pl&aacute;tano</td>
+                    <td>$1.00</td>
+                </tr>
+                <tr>
+                    <td>Pi&ntilde;a</td>
+                    <td>$2.00</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <th>$3.75</th>
+                </tr>
+            </tfoot>
+
+            <caption><strong>Tabla 1.1. Precios de alimentos</strong></caption>
+        </table>
+    </body>
+</html>
