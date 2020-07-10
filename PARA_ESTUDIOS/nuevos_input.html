@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nuevos input de HTML5</title>
+    </head>
+
+    <body>
+        <h1>Demos de nuevos tipos de input de HTML5</h1>
+        
+        <p>
+            Este formulario demustra los nuevos tipos de elementos input de HTML5 y los atributos placeholder, required y autofocus, multiple.
+        </p>
+
+        <form action="http://www.deitel.com" method="post">
+            <p>
+                <label>Color:
+                    <input type="color" autofocus name="color">
+                </label>
+            </p>
+
+            <p>
+                <label>Email:
+                    <input type="email" name="correo" required placeholder="nombre@dominio.com" multiple>
+                    (nombre@dominio.com)
+                    <!--
+                        Este elemento sin el atributo multiple, solo permite una dirección de correo electrónico.
+                        Con el atributo multiple, se permite la introducción de múltiples direcciones de correos, puestos en una lista separada por comas. 
+                    -->
+                </label>
+            </p>
+
+            <p>
+                <label>Hora:
+                    <input type="time" name="tiempo"> (hh:mm)
+                </label>
+            </p>
+
+            <p>
+                <label>Fecha:
+                    <input type="date" name="fecha"> (dd/mm/aaa)
+                </label>
+            </p>
+
+            <p>
+                <label>Fecha local:
+                    <input type="datetime-local" name="fecha_local"> (dd/mm/aaaa hh:mm)
+                </label>
+            </p>
+
+            <p>
+                <label>Semanas:
+                    <input type="week" name="semana">
+                </label>
+            </p>
+
+            <p>
+                <label>Mes:
+                    <input type="month" name="mes">
+                </label>
+            </p>
+
+            <p>
+                <label>B&uacute;squeda:
+                    <input type="search" name="b&uacute;squeda" placeholder="b&uacute;squeda">
+                </label>
+            </p>
+
+            <p>
+                <label>Cantidad:
+                    <input type="number" name="cantidad" min="0" max="10" step="1" value="5">
+                </label>
+            </p>
+
+            <p>
+                <label>Rango:
+                    <input type="range" name="rango" min="0" max="10" step="1" value="3">
+                </label>
+            </p>
+
+            <p>
+                <label>Tel&eacute;fono:
+                    <input type="tel" name="telefono" required placeholder="(###) ###-####" pattern="\(\d{3}\) +\d{3}-\d{4}"> (###) ###-#### 
+                </label>
+            </p>
+
+            <p>
+                <label>URL:
+                    <input type="url" name="url" placeholder="http://host/recurso" required>
+                </label>
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar" formnovalidate>
+                <input type="reset" value="Borrar">
+            </p>
+        </form>
+    </body>
+</html>
